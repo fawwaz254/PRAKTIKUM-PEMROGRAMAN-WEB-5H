@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #11a13a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 10px;
+  text-align: left;
+  flex-grow: 1;
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+}
+
+#home {
+  height: 300px;
+  background-image: url("https://wallpaperaccess.com/full/3462510.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Menempatkan konten di tengah secara vertikal */
+  padding: 20px;
+  color: white;
+}
+
+.home-content {
+  text-align: center;
+}
+
+#home h2,
+#home p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.gunung-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.gunung {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+#gunung h2 {
+  text-align: center;
+  font-size: 2rem; /* Ukuran teks */
+  margin-top: 30px; /* Jarak dari atas (di bawah navbar) */
+  margin-bottom: 20px; /* Jarak ke daftar gunung */
+  color: #333; /* Warna teks */
+}
+
+.gunung img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.gunung .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #11a13a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.gunung .btn:hover {
+  background-color: #0e8230;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,211 @@
+/* Reset margin, padding, dan box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling body secara umum */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+/* Styling header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #11a13a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 10px;
+  text-align: left;
+  flex-grow: 1;
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Styling main content */
+main {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+main h2 {
+  margin-bottom: 2rem;
+}
+
+/* Styling section home */
+#home {
+  height: 300px; /* Tinggi section */
+  background-image: url("https://wallpaperaccess.com/full/3462510.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.home-content {
+  text-align: center; /* Teks di tengah */
+}
+
+#home h2,
+#home p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Styling daftar gunung */
+.gunung-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.gunung {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  margin: 50px;
+}
+
+#gunung h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gunung img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.gunung .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #11a13a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.gunung .btn:hover {
+  background-color: #0e8230;
+}
+
+/* Styling footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CSS Responsif untuk perangkat tablet */
+@media (max-width: 768px) {
+  .gunung-list,
+  .rekomendasi-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gunung,
+  .gunung-rekomendasi {
+    width: 80%;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+}
+
+/* CSS Responsif untuk perangkat HP */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .gunung,
+  .gunung-rekomendasi {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #home {
+    height: auto;
+    padding: 2rem 0;
+    background-size: cover;
+  }
+
+  .gunung-list,
+  .rekomendasi-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gunung .btn,
+  .gunung-rekomendasi .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

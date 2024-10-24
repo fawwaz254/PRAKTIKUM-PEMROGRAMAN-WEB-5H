@@ -1,0 +1,62 @@
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid #000;
+}
+
+.styled-table th.senin {
+  background-color: yellow;
+}
+
+.styled-table th.selasa {
+  background-color: limegreen;
+}
+
+.styled-table th.rabu {
+  background-color: lightblue;
+}
+
+/* Background untuk setiap sel */
+.styled-table td.pemweb {
+  background-color: cyan;
+}
+
+.styled-table td.jar-kom {
+  background-color: yellow;
+}
+
+.styled-table td.pir-cerd {
+  background-color: pink;
+}
+
+.styled-table td.pem-fung {
+  background-color: cyan;
+}
+
+.styled-table td.sis-op {
+  background-color: yellow;
+}
+
+.styled-table td.kom-data {
+  background-color: pink;
+}
+
+.styled-table td.pen-ilm {
+  background-color: cyan;
+}
+
+.styled-table td.imk {
+  background-color: yellow;
+}
+
+.styled-table td.kec-bu {
+  background-color: pink;
+}
